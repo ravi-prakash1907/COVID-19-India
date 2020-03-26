@@ -135,7 +135,37 @@ india.summary = function(){
   
   return(temp)
 }
-#################
+
+#####
+dailyGrowth <- function(){
+  
+  #df <- get(dfName)
+  
+  states <- india.bulk.summary()
+  
+  dName = levels(as.factor(states$Day))
+  df = states[which(states$Day == dName[!dName %in% dName]),]
+  dayCount = nlevels(as.factor(states$Day))
+  
+  for(day in 1:dayCount){
+    temp1 = states[which(states$Day == dName[day]),]
+    aggr = apply(temp1[,4:ncol(temp1)], 2, sum)
+    
+    temp2 = temp1[1,]
+    temp2[,4:c(ncol(temp2)-1)] = aggr[-length(aggr)]
+    temp2[,ncol(temp2)] = getPercent(aggr[3], aggr[4])
+    
+    
+    df = rbind(df, temp2)
+  }
+  
+  name = colnames(df)
+  colnames(df) <- c("Country", name[2:length(name)])
+  df$Country = rep("India", nrow(df))
+  
+  return(df)
+}
+
 
 india.bulk.summary = function() { # date wise country data
   
@@ -234,7 +264,8 @@ india.summary.datewise = sort.datewise("india.summary.statewise")
 #View(india.summary.statewise)
 #View(india.summary.datewise)
 
-
+india.daily.rise = dailyGrowth()
+#View(india.daily.rise)
 #######################################################
 
 
@@ -252,5 +283,7 @@ write.csv(india.summary.datewise, file = "transformed/India_dataset_dateWise_sum
 write.csv(india.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
 
 
+write.csv(india.daily.rise, file = "transformed/India_daily_growth.csv", row.names = FALSE)
+# write.csv(india.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
 
 

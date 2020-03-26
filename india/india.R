@@ -43,6 +43,7 @@ filter <- function(dfName = "data"){
   saparater = "\n\n\n===============================================\n\n"
   lastDay = max(df$Day)
   
+  
   all = levels(df$State.UnionTerritory)
   atLast = df[which(df$Day == lastDay), "State.UnionTerritory"]
   cat(saparater, "Fix Manually :  ", all[!all %in% atLast], saparater)
