@@ -237,6 +237,20 @@ india.summary.datewise = sort.datewise("india.summary.statewise")
 
 #######################################################
 
-# to write
-# 4. india.aggr.summary.datewise      ------>  use datewise()
-# 5. india.aggr.summary.statewise      ------>  supplimentry
+
+################      INDIA     #################
+write.csv(india.daily.conf.ind, file = "transformed/India_Aggregate_Confirmed_indians.csv", row.names = FALSE)
+write.csv(india.daily.conf.forg, file = "transformed/India_Aggregate_Confirmed_forg.csv", row.names = FALSE)
+write.csv(india.daily.conf.all, file = "transformed/India_Aggregate_Confirmed_all.csv", row.names = FALSE)
+write.csv(india.daily.dead, file = "transformed/India_Aggregate_daily_Deaths.csv", row.names = FALSE)
+write.csv(india.daily.cure, file = "transformed/India_Aggregate_daily_Recovered.csv", row.names = FALSE)
+
+write.csv(india.summary.statewise, file = "transformed/India_States_summary.csv", row.names = FALSE)
+write.csv(india.summary.overall, file = "transformed/India_Aggregate_summary.csv", row.names = FALSE)
+
+write.csv(india.summary.datewise, file = "transformed/India_dataset_dateWise_summary.csv", row.names = FALSE)
+write.csv(india.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
+
+
+
+
