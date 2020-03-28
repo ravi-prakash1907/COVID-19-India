@@ -21,9 +21,9 @@ Recovered <- read.csv("cleaned/time_series_19-covid-Recovered.csv")
 #View(Confirmed.indians)
 #View(Confirmed.foreigners)
 
-#View(Confirmed.overall)
-#View(Deaths)
-#View(Recovered)
+#View(Confirmed.overall)    # India.States.daily.Confirmed
+#View(Deaths)               # India.States.daily.Deaths
+#View(Recovered)            # India.States.daily.Recovered
 
 
 #######################################
@@ -111,7 +111,7 @@ summary.states = function() {
     "Total Recovered" = R[,ncol(R)],
     "Total Active Cases" = C.o[,ncol(C.o)] - (D[,ncol(D)] + R[,ncol(R)]),
     "Total Closed Cases" = D[,ncol(D)] + R[,ncol(R)],
-    "Overall Death Rate(%)" = result$cent
+    "Overall Death Rate" = result$cent
   )
   
   return(df)
@@ -130,41 +130,13 @@ india.summary = function(){
     "Total Deaths" = sum(allStates$Total.Deaths),
     "Total Active Cases" = sum(allStates$Total.Active.Cases),
     "Closed Cases" = sum(allStates$Total.Closed.Cases),
-    "Overall Death Rate(%)" = getPercent(sum(allStates$Total.Confirmed), sum(allStates$Total.Deaths))
+    "Overall Death Rate" = getPercent(sum(allStates$Total.Confirmed), sum(allStates$Total.Deaths))
     )
   
   return(temp)
 }
 
 #####
-dailyGrowth <- function(){
-  
-  #df <- get(dfName)
-  
-  states <- india.bulk.summary()
-  
-  dName = levels(as.factor(states$Day))
-  df = states[which(states$Day == dName[!dName %in% dName]),]
-  dayCount = nlevels(as.factor(states$Day))
-  
-  for(day in 1:dayCount){
-    temp1 = states[which(states$Day == dName[day]),]
-    aggr = apply(temp1[,4:ncol(temp1)], 2, sum)
-    
-    temp2 = temp1[1,]
-    temp2[,4:c(ncol(temp2)-1)] = aggr[-length(aggr)]
-    temp2[,ncol(temp2)] = getPercent(aggr[3], aggr[4])
-    
-    
-    df = rbind(df, temp2)
-  }
-  
-  name = colnames(df)
-  colnames(df) <- c("Country", name[2:length(name)])
-  df$Country = rep("India", nrow(df))
-  
-  return(df)
-}
 
 
 india.bulk.summary = function() { # date wise country data
@@ -236,6 +208,93 @@ india.bulk.summary = function() { # date wise country data
   
   return(df)
 }
+
+dailyGrowth <- function(){
+  
+  states <- india.bulk.summary()
+  
+  dName = levels(as.factor(states$Day))
+  df = states[which(states$Day == dName[!dName %in% dName]),]
+  dayCount = nlevels(as.factor(states$Day))
+  
+  for(day in 1:dayCount){
+    temp1 = states[which(states$Day == dName[day]),]
+    aggr = apply(temp1[,4:ncol(temp1)], 2, sum)
+    
+    temp2 = temp1[1,]
+    temp2[,4:c(ncol(temp2)-1)] = aggr[-length(aggr)]
+    temp2[,ncol(temp2)] = getPercent(aggr[3], aggr[4])
+    
+    
+    df = rbind(df, temp2)
+  }
+  
+  name = colnames(df)
+  colnames(df) <- c("Country", name[2:length(name)])
+  df$Country = rep("India", nrow(df))
+  
+  
+  ###############################################
+  
+  #### within how many days, cases double
+  doublesIN = NULL
+  for(today in df$Day[]){
+    if((today == 1) || (df[which(df$Day == today), 'Total.Confirmed'] == 1))
+      dIN = 0
+    else {
+      half = (df[which(df$Day == today),'Total.Confirmed']/2)
+      # 39> <38
+      halfDay = df[which(df$Total.Confirmed == half), 'Day']
+      if(length(halfDay) != 0){
+        dIN = today-halfDay
+        
+      } else {
+        lowerBound = max(df[which(df$Total.Confirmed <= half), 'Day'])
+        upperBound = min(df[which(df$Total.Confirmed >= half), 'Day'])
+        
+        if(length(lowerBound) == 0)
+          dIN = upperBound
+        else {
+          subL = c(half - df[which(df$Day == lowerBound), 'Total.Confirmed'])
+          subU = c(df[which(df$Day == upperBound), 'Total.Confirmed']- half)
+          
+          dIN = today - ifelse((subL<subU), lowerBound, upperBound)
+        }
+      }
+    }
+    
+    if(length(dIN) > 1)
+      dIN = max(dIN)
+    
+    doublesIN = c(doublesIN, dIN)
+  }
+  
+  ### adding col 
+  df$"Doubles In" = doublesIN
+  
+  
+  ######## new cases
+  day = df$Day
+  cases = df$Total.Confirmed
+  
+  newCases = NULL
+  for(i in day){
+    if(i==1)
+      newCases = c(newCases, cases[i])
+    else{
+      val = cases[i]-cases[i-1]
+      newCases = c(newCases, val)
+    }
+  }
+  
+  ### adding new
+  df$"New Cases" = newCases
+  ###############################################
+  df = df[,c(1:6, 13, 12, 7:11)]
+  
+  return(df)
+}
+
 ########################################
 
 # india.aggr.daily(Conf1/Conf2/Conf3/Deaths/Recovered)
@@ -255,14 +314,16 @@ india.daily.cure = country.timeseries("Recovered")
 india.summary.statewise = summary.states()
 #View(india.summary.statewise)
 
+# state summerizer
+
 # india.aggr.summary
 india.summary.overall = india.summary()
-#View(india.summary.overall)
+#View(india.summary.overall)           
 
-india.summary.statewise = india.bulk.summary()
-india.summary.datewise = sort.datewise("india.summary.statewise")
-#View(india.summary.statewise)
-#View(india.summary.datewise)
+india.bulk.summary.statewise = india.bulk.summary()
+india.bulk.summary.datewise = sort.datewise("india.bulk.summary.statewise")
+#View(india.bulk.summary.statewise)
+#View(india.bulk.summary.datewise)
 
 india.daily.rise = dailyGrowth()
 #View(india.daily.rise)
@@ -276,14 +337,38 @@ write.csv(india.daily.conf.all, file = "transformed/India_Aggregate_Confirmed_al
 write.csv(india.daily.dead, file = "transformed/India_Aggregate_daily_Deaths.csv", row.names = FALSE)
 write.csv(india.daily.cure, file = "transformed/India_Aggregate_daily_Recovered.csv", row.names = FALSE)
 
-write.csv(india.summary.statewise, file = "transformed/India_States_summary.csv", row.names = FALSE)
+write.csv(india.bulk.summary.statewise, file = "transformed/India_States_summary.csv", row.names = FALSE)
 write.csv(india.summary.overall, file = "transformed/India_Aggregate_summary.csv", row.names = FALSE)
 
-write.csv(india.summary.datewise, file = "transformed/India_dataset_dateWise_summary.csv", row.names = FALSE)
-write.csv(india.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
+write.csv(india.bulk.summary.datewise, file = "transformed/India_dataset_dateWise_summary.csv", row.names = FALSE)
+write.csv(india.bulk.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
 
 
 write.csv(india.daily.rise, file = "transformed/India_daily_growth.csv", row.names = FALSE)
-# write.csv(india.summary.statewise, file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
+
+
+###################    Ready to use
+write.csv(Confirmed.overall, file = "ready_to_use/India_States_daily_Confirmed.csv", row.names = FALSE)
+write.csv(Deaths, file = "ready_to_use/India_States_daily_Deaths.csv", row.names = FALSE)
+write.csv(Recovered, file = "ready_to_use/India_States_daily_Recovered.csv", row.names = FALSE)
+
+write.csv(india.daily.conf.all, file = "ready_to_use/India_Aggregate_Confirmed_all.csv", row.names = FALSE)
+write.csv(india.daily.dead, file = "ready_to_use/India_Aggregate_daily_Deaths.csv", row.names = FALSE)
+write.csv(india.daily.cure, file = "ready_to_use/India_Aggregate_daily_Recovered.csv", row.names = FALSE)
+
+write.csv(india.summary.statewise[,c(-2,-3)], file = "transformed/India_dataset_stateWise_summary.csv", row.names = FALSE)
+write.csv(india.summary.overall[,c(-2,-3)], file = "ready_to_use/India_Aggregate_summary.csv", row.names = FALSE)
+write.csv(india.daily.rise[,c(-4,-5)], file = "ready_to_use/India_dataset_dateWise.csv", row.names = FALSE)
+
+
+
+
+
+
+
+
+
+
+
 
 

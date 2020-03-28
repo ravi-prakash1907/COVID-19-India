@@ -1,8 +1,9 @@
-# visualization on map
+# visualization on india's map
 library(dplyr) # left join
 library(rlist)
 library(ggplot2)
 library(maps)
+library(ggmap)
 
 # Setting the working directory
 setwd("~/Documents/COVID-19-India/india/")
@@ -11,7 +12,8 @@ setwd("~/Documents/COVID-19-India/india/")
 
 ever.Affected <- read.csv("cleaned/ever.Affected.csv")
 still.Affected <- read.csv("cleaned/still.Affected.csv")
-
+#View(ever.Affected)
+#View(still.Affected)
 
 
 

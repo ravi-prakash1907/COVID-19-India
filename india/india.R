@@ -8,6 +8,7 @@ library(stringr)
 
 #####   dataset   #####
 data = read.csv("covid_19_india.csv")
+position = read.csv("latlong.csv")
 
 ###################################
 
@@ -151,21 +152,38 @@ ever.Affected = conf.overall
 still.Affected = cases.Active
 
 for (i in row.names(ever.Affected)) {
-  for (j in 5:ncol(ever.Affected)) {
+  for (j in 2:ncol(ever.Affected)) {
     if(ever.Affected[i,j] != 0)
       ever.Affected[i,j] = 1
   }
 }
 for (i in row.names(still.Affected)) {
-  for (j in 5:ncol(still.Affected)) {
+  for (j in 2:ncol(still.Affected)) {
     if(still.Affected[i,j] != 0)
       still.Affected[i,j] = 1
   }
 }
 
+colnames(still.Affected) <- colnames(ever.Affected)
+
+ever.Affected = ever.Affected[order(ever.Affected$State),]
+still.Affected = still.Affected[order(still.Affected$State),]
+
+######################## extract lat long
+allStates = levels(position$State)
+affectedStates = levels(data$State.UnionTerritory)
+posToAppend = position[which(length(position$State) == 0),]
+for (x in affectedStates) {
+  posToAppend = rbind(posToAppend, position[which(str_detect(position$State, x)),])
+}
+posToAppend = posToAppend[order(posToAppend$State),]
+
+
 ###################################
-
-
+ever.Affected = cbind(posToAppend, ever.Affected[,c(2:ncol(ever.Affected))])
+still.Affected = cbind(posToAppend, still.Affected[,c(2:ncol(still.Affected))])
+#View(ever.Affected)
+#View(still.Affected)
 #############################################################
 
 # writing to csv
@@ -216,8 +234,39 @@ cleaned.still.Affected <- read.csv("cleaned/still.Affected.csv")
 #View(cleaned.still.Affected)
 
 
-
 #############################################################
+fetched.India.JHU.Conf = read.csv("../time_series_data/jhu_format/time_series_19-covid-jhu-Confirmed.csv")
+
+############### Time series for JHU
+posToAppend = cbind(States = posToAppend[,1], Country = c(rep("India", nrow(cleaned.Confirmed.overall))), posToAppend[,2:3])
+
+jhu.india.conf = cbind(posToAppend, cleaned.Confirmed.overall[order(cleaned.Confirmed.overall$State),2:ncol(cleaned.Confirmed.overall)])
+jhu.india.dead = cbind(posToAppend, cleaned.Deaths[order(cleaned.Deaths$State),2:ncol(cleaned.Deaths)])
+jhu.india.rcvr = cbind(posToAppend, cleaned.Recovered[order(cleaned.Recovered$State),2:ncol(cleaned.Recovered)])
+
+omittedDates = data.frame(  c1 = rep(0, nrow(jhu.india.conf))  )
+for(cols in 2:8){
+  omittedDates = cbind(omittedDates, omittedDates[,1])
+}
+
+jhu.india.conf = cbind(jhu.india.conf[,1:4], omittedDates, jhu.india.conf[,5:ncol(jhu.india.conf)])
+jhu.india.dead = cbind(jhu.india.dead[,1:4], omittedDates, jhu.india.dead[,5:ncol(jhu.india.dead)])
+jhu.india.rcvr = cbind(jhu.india.rcvr[,1:4], omittedDates, jhu.india.rcvr[,5:ncol(jhu.india.rcvr)])
+
+################################
+colnames(jhu.india.conf) <- colnames(fetched.India.JHU.Conf)
+colnames(jhu.india.dead) <- colnames(fetched.India.JHU.Conf)
+colnames(jhu.india.rcvr) <- colnames(fetched.India.JHU.Conf)
+
+
+write.csv(jhu.india.conf, file = "../time_series_data/ready/time_series_19-covid-Confirmed-India.csv")
+write.csv(jhu.india.dead, file = "../time_series_data/ready/time_series_19-covid-Deaths-India.csv")
+write.csv(jhu.india.rcvr, file = "../time_series_data/ready/time_series_19-covid-Recovered-India.csv")
+#View(jhu.india.conf)
+#View(jhu.india.dead)
+#View(jhu.india.rcvr)
+
+
 
 ##########    ENDS     ###########
 
