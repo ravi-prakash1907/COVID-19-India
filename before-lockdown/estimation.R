@@ -126,19 +126,34 @@ repeat {
   
 }
 
+
 ###################################################
+newDateSeq = seq_along(1:india.daily.rise$Day[dayOfInfection-1])
+
+newDate = sort(as.Date(india.daily.rise$Date[1], "%d/%m/%y")+newDateSeq-1)
+extraDates = format(newDate, "%d/%m/%y")
+###################################################
+
 
 t1 = cbind(
             Country = "India",
-            india.daily.rise[1:(dayOfInfection-1),c('Date', 'Day', 'Confirmed')],
+            Date = extraDates,
+            india.daily.rise[1:(dayOfInfection-1),c('Day', 'Confirmed')],
             Expacted = rep(NA, dayOfInfection-1)
           )
 
 
+###################################################
+newDateSeq = seq_along(1:nrow(daysAnalysed))
+
+newDate = sort(as.Date(india.daily.rise$Date[dayOfInfection], "%d/%m/%y")+newDateSeq-1)
+extraDates = format(newDate, "%d/%m/%y")
+###################################################
+
 totalNAs = nrow(daysAnalysed)+(dayOfInfection-1)-nrow(india.daily.rise)
 t2 = cbind( 
             Country = "India",
-            Date = c(as.character(india.daily.rise$Date[dayOfInfection:dayOfDeath]), rep(NA, totalNAs)),
+            Date = extraDates,
             Day = daysAnalysed[,1],
             daysAnalysed[,2:3]
           )
@@ -188,7 +203,7 @@ while(day >= 1){
 ###################################################
 
 
-View(daysAnalysed)
+# View(daysAnalysed)
 
 # write to a .csv file
-
+write.csv(daysAnalysed, file = "analysis/estimatedCases.csv")
