@@ -206,4 +206,5 @@ while(day >= 1){
 # View(daysAnalysed)
 
 # write to a .csv file
-write.csv(daysAnalysed, file = "analysis/estimatedCases.csv")
+write.csv(daysAnalysed, file = "analysis/estimatedCases.csv", row.names = F)
+
