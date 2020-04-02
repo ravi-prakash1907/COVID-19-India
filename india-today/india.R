@@ -9,6 +9,9 @@ library(stringr)
 #####   dataset   #####
 data = read.csv("covid_19_india.csv")
 position = read.csv("latlong.csv")
+
+data = data[which(str_detect(data$State.UnionTerritory, "Unassigned", negate = T)),]
+data$State.UnionTerritory = as.factor(as.character(data$State.UnionTerritory))
 #View(data)
 #View(position)
 ###################################
