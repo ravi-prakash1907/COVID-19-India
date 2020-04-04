@@ -21,11 +21,11 @@ Here is the <u>estimated</u> value for the confirmed cases that are actually rep
 
 The main aim of this project work is to analysis that how effective the COVID-19 is, herein India and hence why every-one must consider the warnings seriously & mind the social distencing.
 
-<hr />
+<br />
 
 ### Bibliography
-
-> 1. Data Source: [Ministry of Health and Welfare - India]("https://www.mohfw.gov.in/")
-> 2. [Kaggle]("https://www.kaggle.com/")
-> 3. [covid19india]("https://www.covid19india.org/") Tracker
+Data Source: 
+> 1. [Ministry of Health and Welfare - India](https://www.mohfw.gov.in/)
+> 2. [Kaggle](https://www.kaggle.com/)
+> 3. [covid19india](https://www.covid19india.org/) Tracker
 > 4. The besic idea for this analysis was driven from https://github.com/midas-network/COVID-19/tree/master/parameter_estimates/2019_novel_coronavirus
