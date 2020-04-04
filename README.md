@@ -9,12 +9,13 @@ We aim to do the analysis that how good the **21 day' lockdown** is, for the gov
 It also makes an estimate whether what would have been the number of cases till _March 24<sup>th</sup>_ i.e. since when the lockdown came into action.<br />
 
 ### Reported & Estimated number of cases/day:
+Here is the <u>estimated</u> value for the confirmed cases that are actually reported.
 
 #### Table
-[!Image]("Plots/tables/uptoLockdown.png")
+![Image](Plots/tables/uptoLockdown.png)
 
 #### Visualization
-[!Image]("Plots/visuals/uptoLockdownH.png")
+![Image](Plots/visuals/uptoLockdownH.png)
 
 <hr /><br />
 
