@@ -5,7 +5,7 @@ Here we transform the availed data to generate a time-series dataset.<br /><br /
 
 <hr /><br />
 
-We aim to do the analysis that how good the **21 day' lockdown** is, for the government.<br />
+We aim to do the analysis that how good the **21 days' lockdown** is, for the government.<br />
 It also makes an estimate whether what would have been the number of cases till _March 24<sup>th</sup>_ i.e. since when the lockdown came into action.<br />
 
 ### Reported & Estimated number of cases/day:
