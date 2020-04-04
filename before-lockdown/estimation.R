@@ -82,7 +82,7 @@ conf = c(india.daily.rise$Confirmed[dayOfInfection:nrow(india.daily.rise)], rep(
 
 daysAnalysed = data.frame(
   Day = daysSinceInf,
-  Atual.Cases = conf,
+  Actual.Cases = conf,
   Expacted.Cases = rep(NA, length(daysSinceInf))
 )
 
