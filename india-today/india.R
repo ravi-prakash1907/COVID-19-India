@@ -208,6 +208,7 @@ cleaned.ever.Affected <- read.csv("cleaned/ever.Affected.csv")
 cleaned.still.Affected <- read.csv("cleaned/still.Affected.csv")
 
 
+
 #View(ready)
 
 #View(cleaned.Confirmed)
@@ -221,6 +222,13 @@ cleaned.still.Affected <- read.csv("cleaned/still.Affected.csv")
 #############################################################
 fetched.India.JHU.Conf = read.csv("../time_series_data/jhu_format/time_series_19-covid-jhu-Confirmed.csv")
 #View(fetched.India.JHU.Conf)
+
+
+#cleaned.Confirmed = cleaned.Confirmed[,-ncol(cleaned.Confirmed)]
+#cleaned.Deaths = cleaned.Deaths[,-ncol(cleaned.Deaths)]
+#cleaned.Recovered = cleaned.Recovered[,-ncol(cleaned.Recovered)]
+
+
 ############### Time series for JHU
 posToAppend = cbind(States = posToAppend[,1], Country = c(rep("India", nrow(cleaned.Confirmed))), posToAppend[,2:3])
 
