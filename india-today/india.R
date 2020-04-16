@@ -219,51 +219,6 @@ cleaned.still.Affected <- read.csv("cleaned/still.Affected.csv")
 #View(cleaned.still.Affected)
 
 
-#############################################################
-fetched.India.JHU.Conf = read.csv("../time_series_data/jhu_format/time_series_19-covid-jhu-Confirmed.csv")
-#View(fetched.India.JHU.Conf)
-
-
-#cleaned.Confirmed = cleaned.Confirmed[,-ncol(cleaned.Confirmed)]
-#cleaned.Deaths = cleaned.Deaths[,-ncol(cleaned.Deaths)]
-#cleaned.Recovered = cleaned.Recovered[,-ncol(cleaned.Recovered)]
-
-
-############### Time series for JHU
-posToAppend = cbind(States = posToAppend[,1], Country = c(rep("India", nrow(cleaned.Confirmed))), posToAppend[,2:3])
-
-jhu.india.conf = cbind(posToAppend, cleaned.Confirmed[order(cleaned.Confirmed$State),2:ncol(cleaned.Confirmed)])
-jhu.india.dead = cbind(posToAppend, cleaned.Deaths[order(cleaned.Deaths$State),2:ncol(cleaned.Deaths)])
-jhu.india.rcvr = cbind(posToAppend, cleaned.Recovered[order(cleaned.Recovered$State),2:ncol(cleaned.Recovered)])
-
-omittedDates = data.frame(  c1 = rep(0, nrow(jhu.india.conf))  )
-for(cols in 2:8){
-  omittedDates = cbind(omittedDates, omittedDates[,1])
-}
-
-jhu.india.conf = cbind(jhu.india.conf[,1:4], omittedDates, jhu.india.conf[,5:ncol(jhu.india.conf)])
-jhu.india.dead = cbind(jhu.india.dead[,1:4], omittedDates, jhu.india.dead[,5:ncol(jhu.india.dead)])
-jhu.india.rcvr = cbind(jhu.india.rcvr[,1:4], omittedDates, jhu.india.rcvr[,5:ncol(jhu.india.rcvr)])
-
-################################
-colnames(jhu.india.conf) <- colnames(fetched.India.JHU.Conf)
-colnames(jhu.india.dead) <- colnames(fetched.India.JHU.Conf)
-colnames(jhu.india.rcvr) <- colnames(fetched.India.JHU.Conf)
-
-#jhu.india.conf = jhu.india.conf[,-ncol(jhu.india.conf)]
-#jhu.india.dead = jhu.india.dead[,-ncol(jhu.india.dead)]
-#jhu.india.rcvr = jhu.india.rcvr[,-ncol(jhu.india.rcvr)]
-
-
-write.csv(jhu.india.conf, file = "../time_series_data/ready/time_series_19-covid-Confirmed-India.csv", row.names = FALSE)
-write.csv(jhu.india.dead, file = "../time_series_data/ready/time_series_19-covid-Deaths-India.csv", row.names = FALSE)
-write.csv(jhu.india.rcvr, file = "../time_series_data/ready/time_series_19-covid-Recovered-India.csv", row.names = FALSE)
-#View(jhu.india.conf)
-#View(jhu.india.dead)
-#View(jhu.india.rcvr)
-
-
-
 ##########    ENDS     ###########
 
 
