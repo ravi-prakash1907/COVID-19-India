@@ -26,6 +26,9 @@ india.bulk.summary.datewise = read.csv("ready_to_use/India_dataset_dateWise_summ
 india.bulk.summary.statewise = read.csv("ready_to_use/India_dataset_stateWise_summary.csv")
 
 
+# Analysed
+Analysed = read.csv("analysis/estimatedCases.csv")
+
 ######### Viewing
 
 
@@ -43,6 +46,9 @@ india.bulk.summary.statewise = read.csv("ready_to_use/India_dataset_stateWise_su
 
 #View(india.bulk.summary.datewise)
 #View(india.bulk.summary.statewise)
+
+
+#View(Analysed)
 
 
 
