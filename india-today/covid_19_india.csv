@@ -1,4 +1,4 @@
-Sno,Date,Time,State/UnionTerritory,ConfirmedIndianNational,ConfirmedForeignNational,Cured,Deaths,Confirmed
+﻿Sno,Date,Time,State/UnionTerritory,ConfirmedIndianNational,ConfirmedForeignNational,Cured,Deaths,Confirmed
 1,30/01/20,6:00 PM,Kerala,1,0,0,0,1
 2,31/01/20,6:00 PM,Kerala,1,0,0,0,1
 3,01/02/20,6:00 PM,Kerala,2,0,0,0,2
@@ -1189,3 +1189,36 @@ Sno,Date,Time,State/UnionTerritory,ConfirmedIndianNational,ConfirmedForeignNatio
 1188,21/04/20,7:00 AM,Uttarakhand,-,-,18,0,46
 1189,21/04/20,7:00 AM,Uttar Pradesh,-,-,140,20,1294
 1190,21/04/20,7:00 AM,West Bengal,-,-,73,12,392
+1191,22/04/20,9:00 AM,Andaman and Nicobar Islands,-,-,11,0,17
+1192,22/04/20,9:00 AM,Andhra Pradesh,-,-,120,24,813
+1193,22/04/20,9:00 AM,Arunachal Pradesh,-,-,1,0,1
+1194,22/04/20,9:00 AM,Assam,-,-,19,1,35
+1195,22/04/20,9:00 AM,Bihar,-,-,46,2,126
+1196,22/04/20,9:00 AM,Chandigarh,-,-,14,0,27
+1197,22/04/20,9:00 AM,Chhattisgarh,-,-,26,0,36
+1198,22/04/20,9:00 AM,Delhi,-,-,611,47,2156
+1199,22/04/20,9:00 AM,Goa,-,-,7,0,7
+1200,22/04/20,9:00 AM,Gujarat,-,-,144,95,2272
+1201,22/04/20,9:00 AM,Haryana,-,-,127,3,254
+1202,22/04/20,9:00 AM,Himachal Pradesh,-,-,16,1,39
+1203,22/04/20,9:00 AM,Jammu and Kashmir,-,-,81,5,380
+1204,22/04/20,9:00 AM,Jharkhand,-,-,0,3,45
+1205,22/04/20,9:00 AM,Karnataka,-,-,129,17,425
+1206,22/04/20,9:00 AM,Kerala,-,-,323,3,427
+1207,22/04/20,9:00 AM,Ladakh,-,-,14,0,18
+1208,22/04/20,9:00 AM,Madhya Pradesh,-,-,148,80,1592
+1209,22/04/20,9:00 AM,Maharashtra,-,-,722,251,5221
+1210,22/04/20,9:00 AM,Manipur,-,-,2,0,2
+1211,22/04/20,9:00 AM,Meghalaya,-,-,0,1,12
+1212,22/04/20,9:00 AM,Mizoram,-,-,0,0,1
+1213,22/04/21,9:00 AM,Nagaland,-,-,0,0,0
+1214,22/04/20,9:00 AM,Odisha,-,-,30,1,82
+1215,22/04/20,9:00 AM,Puducherry,-,-,3,0,7
+1216,22/04/20,9:00 AM,Punjab,-,-,49,16,251
+1217,22/04/20,9:00 AM,Rajasthan,-,-,230,25,1801
+1218,22/04/20,9:00 AM,Tamil Nadu,-,-,635,18,1596
+1219,22/04/20,9:00 AM,Telengana,-,-,194,23,945
+1220,22/04/20,9:00 AM,Tripura,-,-,1,0,2
+1221,22/04/20,9:00 AM,Uttarakhand,-,-,19,0,46
+1222,22/04/20,9:00 AM,Uttar Pradesh,-,-,165,21,1412
+1223,22/04/20,9:00 AM,West Bengal,-,-,73,15,423
