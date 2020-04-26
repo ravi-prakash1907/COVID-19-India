@@ -28,4 +28,4 @@ Data Source:
 > 1. [Ministry of Health and Welfare - India](https://www.mohfw.gov.in/)
 > 2. [Kaggle](https://www.kaggle.com/)
 > 3. [covid19india](https://www.covid19india.org/) Tracker
-> 4. The besic idea for this analysis was driven from https://github.com/midas-network/COVID-19/tree/master/parameter_estimates/2019_novel_coronavirus
+> 4. The besic idea for this analysis was driven from [GitHub repo.](https://github.com/midas-network/COVID-19/tree/master/parameter_estimates/2019_novel_coronavirus)
