@@ -115,7 +115,7 @@ casesToday$S..No. = c(1:nrow(casesToday))
 ##################
 # Other info
 date = format(Sys.Date()-1, "%d/%m/%y")
-time = "10:00 AM"
+time = "9:30 PM"
 indians = "-"
 foreigners = "-"
 
