@@ -70,7 +70,7 @@ colnames(todayData) <- tableHeader
 ###############################################
 
 # Saving this dataset
-write.csv(todayData, file = "todayData.csv", row.names=F)
+write.csv(todayData, file = "todayData.csv", row.names=F, quote = F)
 
 
 ###################################################################################
@@ -114,8 +114,8 @@ casesToday$S..No. = c(1:nrow(casesToday))
 
 ##################
 # Other info
-date = format(Sys.Date()-1, "%d/%m/%y")
-time = "9:30 PM"
+date = format(Sys.Date(), "%d/%m/%y")
+time = "9:30 AM"
 indians = "-"
 foreigners = "-"
 
@@ -137,7 +137,7 @@ colnames(casesToday) = colnames(casesYesterday)
 
 
 # Backing up the previous data
-write.csv(casesTillYesterday, file="backup/covid_19_india.csv", row.names = FALSE)
+write.csv(casesTillYesterday, file="backup/covid_19_india.csv", row.names = FALSE, quote = FALSE)
 
 # Updating the actual
 lastRowNo = nrow(casesTillYesterday)
