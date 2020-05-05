@@ -41,3 +41,4 @@ vignettes/*.pdf
 
 # testing shell script
 test.R
+visualizer.R
