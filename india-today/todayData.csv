@@ -1,33 +1,33 @@
-S. No.,Name of State / UT,Total Confirmed cases (Including 111 foreign Nationals) ,Cured/Discharged/Migrated,Death
+S. No.,Name of State / UT,Total Confirmed cases (Including 111 foreign Nationals) ,Cured/Discharged/Migrated,Deaths ( more than 70% cases due to comorbidities )
 1,Andaman and Nicobar Islands,33,32,0
-2,Andhra Pradesh,1650,524,36
+2,Andhra Pradesh,1717,589,36
 3,Arunachal Pradesh,1,1,0
 4,Assam,43,32,1
-5,Bihar,517,125,4
-6,Chandigarh,94,19,0
-7,Chhattisgarh,57,36,0
-8,Delhi,4549,1362,64
+5,Bihar,529,130,4
+6,Chandigarh,102,21,1
+7,Chhattisgarh,58,36,0
+8,Delhi,4898,1431,64
 9,Goa,7,7,0
-10,Gujarat,5428,1042,290
-11,Haryana,442,245,5
-12,Himachal Pradesh,40,34,1
-13,Jammu and Kashmir,701,287,8
-14,Jharkhand,115,22,3
-15,Karnataka,642,304,26
-16,Kerala,500,401,4
+10,Gujarat,5804,1195,319
+11,Haryana,517,254,6
+12,Himachal Pradesh,41,38,1
+13,Jammu and Kashmir,726,303,8
+14,Jharkhand,115,27,3
+15,Karnataka,659,324,28
+16,Kerala,500,462,4
 17,Ladakh,41,17,0
-18,Madhya Pradesh,2942,798,165
-19,Maharashtra,12974,2115,548
+18,Madhya Pradesh,3049,1000,176
+19,Maharashtra,14541,2465,583
 20,Manipur,2,2,0
-21,Meghalaya,12,0,1
+21,Meghalaya,12,10,1
 22,Mizoram,1,0,0
-23,Odisha,163,60,1
-24,Puducherry,8,5,0
-25,Punjab,1102,117,21
-26,Rajasthan,2886,1356,71
-27,Tamil Nadu,3023,1379,30
-28,Telengana,1082,490,29
-29,Tripura,16,2,0
+23,Odisha,170,60,1
+24,Puducherry,9,6,0
+25,Punjab,1233,128,23
+26,Rajasthan,3061,1394,77
+27,Tamil Nadu,3550,1409,31
+28,Telengana,1085,585,29
+29,Tripura,29,2,0
 30,Uttarakhand,60,39,1
-31,Uttar Pradesh,2742,758,45
-32,West Bengal,963,151,35
+31,Uttar Pradesh,2859,944,53
+32,West Bengal,1259,218,133
