@@ -144,8 +144,12 @@ lastRowNo = nrow(casesTillYesterday)
 casesToday$Sno = casesToday$Sno+lastRowNo
 
 casesTillNow = rbind(casesTillYesterday, casesToday)
-View(tail(casesTillNow, 33))
-View(tail(casesTillYesterday, 33))
+
+
+New = tail(casesTillNow, 33)
+Old = tail(casesTillYesterday, 33)
+View(New)
+View(Old)
 
 
 ################################################
