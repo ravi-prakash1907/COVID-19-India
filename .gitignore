@@ -42,3 +42,6 @@ vignettes/*.pdf
 # testing shell script
 test.R
 visualizer.R
+
+# directory that are not redy with codes anf datasets
+after-lockdown
