@@ -41,7 +41,7 @@ rows = xpathSApply(parsedHTML, '//tbody/tr', xmlValue)
 values = xpathSApply(parsedHTML, '//tbody/tr/td', xmlValue)
 #values
 
-limit = which(str_detect(rows, "Total number of confirmed cases in India"))
+limit = which(str_detect(rows, "Total"))
 
 sno = NULL
 states = NULL
@@ -61,9 +61,16 @@ for(row in seq(0, c(limit-2))) {
 
 }
 
-states[limit-1] = ifelse(states[limit-1] == "Cases being reassigned to states", "Unclassified", states[limit-1])
-cured[limit-1] = ifelse(is.na(cured[limit-1]), 0, cured[limit-1])
-dead[limit-1] = ifelse(is.na(dead[limit-1]), 0, dead[limit-1])
+#states[limit-1] = ifelse(states[limit-1] == "Cases being reassigned to states", "Unclassified", states[limit-1])
+#cured[limit-1] = ifelse(is.na(cured[limit-1]), 0, cured[limit-1])
+#dead[limit-1] = ifelse(is.na(dead[limit-1]), 0, dead[limit-1])
+
+if(is.na(cured[limit-1]) && is.na(dead[limit-1])) {
+  states[limit-1] = "Unclassified"
+  cured[limit-1] = 0
+  dead[limit-1] = 0
+}
+
 
 # joining to the 
 todayData = cbind(sno, states, conf, cured, dead)
