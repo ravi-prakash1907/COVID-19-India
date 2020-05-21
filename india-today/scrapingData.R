@@ -61,6 +61,10 @@ for(row in seq(0, c(limit-2))) {
 
 }
 
+states[limit-1] = ifelse(states[limit-1] == "Cases being reassigned to states", "Unclassified", states[limit-1])
+cured[limit-1] = ifelse(is.na(cured[limit-1]), 0, cured[limit-1])
+dead[limit-1] = ifelse(is.na(dead[limit-1]), 0, dead[limit-1])
+
 # joining to the 
 todayData = cbind(sno, states, conf, cured, dead)
 colnames(todayData) <- tableHeader
