@@ -1,35 +1,35 @@
 S. No.,Name of State / UT,Total Confirmed cases* ,Cured/Discharged/Migrated,Deaths**
 1,Andaman and Nicobar Islands,33,33,0
-2,Andhra Pradesh,2602,1640,53
+2,Andhra Pradesh,2647,1709,53
 3,Arunachal Pradesh,1,1,0
-4,Assam,170,48,4
-5,Bihar,1674,571,10
-6,Chandigarh,202,57,3
-7,Chhattisgarh,115,59,0
+4,Assam,203,54,4
+5,Bihar,1982,593,11
+6,Chandigarh,217,139,3
+7,Chhattisgarh,128,59,0
 8,Dadar Nagar Haveli,1,0,0
-9,Delhi,11088,5192,176
-10,Goa,50,7,0
-11,Gujarat,12537,5219,749
-12,Haryana,993,648,14
-13,Himachal Pradesh,110,54,3
-14,Jammu and Kashmir,1390,678,18
-15,Jharkhand,231,127,3
-16,Karnataka,1462,556,41
-17,Kerala,666,502,4
+9,Delhi,11659,5567,194
+10,Goa,52,7,0
+11,Gujarat,12905,5488,773
+12,Haryana,1031,681,15
+13,Himachal Pradesh,152,59,3
+14,Jammu and Kashmir,1449,684,20
+15,Jharkhand,290,129,3
+16,Karnataka,1605,571,41
+17,Kerala,690,510,4
 18,Ladakh,44,43,0
-19,Madhya Pradesh,5735,2733,267
-20,Maharashtra,39297,10318,1390
+19,Madhya Pradesh,5981,2843,270
+20,Maharashtra,41642,11726,1454
 21,Manipur,25,2,0
 22,Meghalaya,14,12,1
 23,Mizoram,1,1,0
-24,Odisha,1052,307,6
-25,Puducherry,18,9,0
-26,Punjab,2005,1794,38
-27,Rajasthan,6015,3404,147
-28,Tamil Nadu,13191,5882,87
-29,Telengana,1661,1015,40
-30,Tripura,173,133,0
-31,Uttarakhand,122,53,1
-32,Uttar Pradesh,5175,3066,127
-33,West Bengal,3103,1136,253
-NA,Unclassified,1403,0,0
+24,Odisha,1103,393,7
+25,Puducherry,20,10,0
+26,Punjab,2028,1819,39
+27,Rajasthan,6227,3485,151
+28,Tamil Nadu,13967,6282,94
+29,Telengana,1699,1035,45
+30,Tripura,173,148,0
+31,Uttarakhand,146,54,1
+32,Uttar Pradesh,5515,3204,138
+33,West Bengal,3197,1193,259
+NA,Unclassified,1620,0,0
