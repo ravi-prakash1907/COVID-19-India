@@ -120,7 +120,7 @@ india.bulk.summary = function() { # date wise country data
   )
   
   
-  for (state in levels(conf$State)) {
+  for (state in levels(Confirmed$State)) {
     C = Confirmed[which(str_detect(Confirmed$State, state)),]
     D = Deaths[which(str_detect(Deaths$State, state)),]
     R = Recovered[which(str_detect(Recovered$State, state)),]
