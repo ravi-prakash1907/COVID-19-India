@@ -27,16 +27,7 @@ tableHeader = xpathSApply(parsedHTML, '//thead//strong', xmlValue)  # header
 
 rows = xpathSApply(parsedHTML, '//tbody/tr', xmlValue)
 
-#########     METHOD 1      ##########
-# 
-# for (row in rows) {
-#   # we'll use regex here
-#   xpathSApply(row, '/td', xmlValue)
-# }
 
-
-
-#########     METHOD 2      ##########
 # fetch all datavalues seperatly
 values = xpathSApply(parsedHTML, '//tbody/tr/td', xmlValue)
 #values
@@ -51,15 +42,19 @@ dead = NULL
 
 #fetching seperate columns' data
 for(row in seq(0, c(limit-2))) {
-  rowIndex = row*5
+  rowIndex = row*6  # 5 --> 6 cuz' of 'Active cases' as new col
   
   sno = c(sno, as.integer(values[rowIndex + 1]))
   states = c(states, as.character(values[rowIndex + 2]))
-  conf = c(conf, as.integer(values[rowIndex + 3]))
+  # active = c(conf, as.integer(values[rowIndex + 4]))  this col is self calculated
   cured = c(cured, as.integer(values[rowIndex + 4]))
   dead = c(dead, as.integer(values[rowIndex + 5]))
+  conf = c(conf, as.integer(values[rowIndex + 6]))
 
 }
+
+
+
 
 #states[limit-1] = ifelse(states[limit-1] == "Cases being reassigned to states", "Unclassified", states[limit-1])
 #cured[limit-1] = ifelse(is.na(cured[limit-1]), 0, cured[limit-1])
@@ -126,7 +121,7 @@ casesToday$S..No. = c(1:nrow(casesToday))
 ##################
 # Other info
 date = format(Sys.Date(), "%d/%m/%y")
-time = "7:30 PM"
+time = "8:00 AM"
 indians = "-"
 foreigners = "-"
 
