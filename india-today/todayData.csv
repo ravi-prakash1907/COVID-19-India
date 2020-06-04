@@ -1,37 +1,37 @@
-S. No.,Name of State / UT,Total Confirmed cases* ,Cured/Discharged/Migrated,Deaths**
+S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
 1,Andaman and Nicobar Islands,33,33,0
-2,Andhra Pradesh,3171,2057,58
-3,Arunachal Pradesh,2,1,0
-4,Assam,781,87,4
-5,Bihar,3061,1083,15
-6,Chandigarh,279,187,4
-7,Chhattisgarh,369,83,0
-8,Dadar Nagar Haveli,2,0,0
-9,Delhi,15257,7264,303
-10,Goa,68,37,0
-11,Gujarat,15195,7549,938
-12,Haryana,1381,838,18
-13,Himachal Pradesh,273,70,5
-14,Jammu and Kashmir,1921,854,26
-15,Jharkhand,448,185,4
-16,Karnataka,2418,781,47
-17,Kerala,1004,552,7
-18,Ladakh,53,43,0
-19,Madhya Pradesh,7261,3927,313
-20,Maharashtra,56948,17918,1897
-21,Manipur,44,4,0
-22,Meghalaya,20,12,1
-23,Mizoram,1,1,0
-24,Nagaland,4,0,0
-25,Odisha,1593,733,7
-26,Puducherry,46,12,0
-27,Punjab,2139,1918,40
-28,Rajasthan,7703,4457,173
-29,Sikkim,1,0,0
-30,Tamil Nadu,18545,9909,133
-31,Telengana,2098,1284,63
-32,Tripura,230,165,0
-33,Uttarakhand,469,79,4
-34,Uttar Pradesh,6991,3991,182
-35,West Bengal,4192,1578,289
-NA,Unclassified,4332,0,0
+2,Andhra Pradesh,4080,2466,68
+3,Arunachal Pradesh,38,1,0
+4,Assam,1672,413,4
+5,Bihar,4390,2077,25
+6,Chandigarh,301,214,5
+7,Chhattisgarh,668,188,2
+8,Dadar Nagar Haveli,8,1,0
+9,Delhi,23645,9542,606
+10,Goa,79,57,0
+11,Gujarat,18100,12212,1122
+12,Haryana,2954,1089,23
+13,Himachal Pradesh,359,150,5
+14,Jammu and Kashmir,2857,1007,34
+15,Jharkhand,752,321,5
+16,Karnataka,4063,1514,53
+17,Kerala,1494,651,11
+18,Ladakh,90,48,1
+19,Madhya Pradesh,8588,5445,371
+20,Maharashtra,74860,32329,2587
+21,Manipur,118,38,0
+22,Meghalaya,33,13,1
+23,Mizoram,14,1,0
+24,Nagaland,58,0,0
+25,Odisha,2388,1416,7
+26,Puducherry,82,25,0
+27,Punjab,2376,2029,47
+28,Rajasthan,9652,6744,209
+29,Sikkim,2,0,0
+30,Tamil Nadu,25872,14316,208
+31,Telengana,3020,1556,99
+32,Tripura,468,173,0
+33,Uttarakhand,1085,282,8
+34,Uttar Pradesh,8729,5176,229
+35,West Bengal,6508,2580,345
+NA,Unclassified,7483,0,0

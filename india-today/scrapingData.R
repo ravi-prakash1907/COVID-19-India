@@ -69,6 +69,7 @@ if(is.na(cured[limit-1]) && is.na(dead[limit-1])) {
 
 # joining to the 
 todayData = cbind(sno, states, conf, cured, dead)
+tableHeader = tableHeader[-3]  # remove "Active Cases*"
 colnames(todayData) <- tableHeader
 # View(todayData)
 
