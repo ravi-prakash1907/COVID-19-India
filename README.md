@@ -1,6 +1,9 @@
 # <font color="red"><u><b>COVID-19 : India</b></u></font>
 This repository is made in order to track the growth of **novel Coronavirus Dieases (COVID-19)** in India.<br />
 
+Following animation shows the growth of this pandemic in 126 days, in India.
+![image](Plots/graphs/gifs/confirmed.gif)
+
 Here we transform the availed data to generate a time-series dataset.<br /><br />
 
 <hr /><br />
