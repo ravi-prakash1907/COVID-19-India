@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
 1,Andaman and Nicobar Islands,33,33,0
-2,Andhra Pradesh,4080,2466,68
-3,Arunachal Pradesh,38,1,0
-4,Assam,1672,413,4
-5,Bihar,4390,2077,25
+2,Andhra Pradesh,4223,2539,71
+3,Arunachal Pradesh,42,1,0
+4,Assam,1988,442,4
+5,Bihar,4493,2210,29
 6,Chandigarh,301,214,5
-7,Chhattisgarh,668,188,2
-8,Dadar Nagar Haveli,8,1,0
-9,Delhi,23645,9542,606
-10,Goa,79,57,0
-11,Gujarat,18100,12212,1122
-12,Haryana,2954,1089,23
-13,Himachal Pradesh,359,150,5
-14,Jammu and Kashmir,2857,1007,34
-15,Jharkhand,752,321,5
-16,Karnataka,4063,1514,53
-17,Kerala,1494,651,11
+7,Chhattisgarh,756,213,2
+8,Dadar Nagar Haveli,12,1,0
+9,Delhi,25004,9898,650
+10,Goa,166,57,0
+11,Gujarat,18584,12667,1155
+12,Haryana,3281,2134,24
+13,Himachal Pradesh,383,179,5
+14,Jammu and Kashmir,3142,1048,35
+15,Jharkhand,793,354,6
+16,Karnataka,4320,1610,57
+17,Kerala,1588,690,14
 18,Ladakh,90,48,1
-19,Madhya Pradesh,8588,5445,371
-20,Maharashtra,74860,32329,2587
-21,Manipur,118,38,0
+19,Madhya Pradesh,8762,5637,377
+20,Maharashtra,77793,33681,2710
+21,Manipur,124,38,0
 22,Meghalaya,33,13,1
-23,Mizoram,14,1,0
-24,Nagaland,58,0,0
-25,Odisha,2388,1416,7
+23,Mizoram,17,1,0
+24,Nagaland,80,0,0
+25,Odisha,2478,1416,7
 26,Puducherry,82,25,0
-27,Punjab,2376,2029,47
-28,Rajasthan,9652,6744,209
+27,Punjab,2415,2043,47
+28,Rajasthan,9862,7104,213
 29,Sikkim,2,0,0
-30,Tamil Nadu,25872,14316,208
-31,Telengana,3020,1556,99
-32,Tripura,468,173,0
-33,Uttarakhand,1085,282,8
-34,Uttar Pradesh,8729,5176,229
-35,West Bengal,6508,2580,345
-NA,Unclassified,7483,0,0
+30,Tamil Nadu,27256,14902,220
+31,Telengana,3147,1587,105
+32,Tripura,644,173,0
+33,Uttarakhand,1153,297,10
+34,Uttar Pradesh,9237,5439,245
+35,West Bengal,6876,2768,355
+NA,Unclassified,7610,0,0
