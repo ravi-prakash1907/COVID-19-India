@@ -1,38 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,34,33,0
-2,Andhra Pradesh,5269,2899,78
-3,Arunachal Pradesh,57,2,0
-4,Assam,3092,1249,4
-5,Bihar,5710,3071,33
-6,Chandigarh,327,286,5
-7,Chhattisgarh,1262,402,6
-8,Dadar Nagar Haveli,26,2,0
-9,Daman & Diu,2,0,0
-10,Delhi,32810,12245,984
-11,Goa,387,67,0
-12,Gujarat,21521,14735,1347
-13,Haryana,5579,2188,52
-14,Himachal Pradesh,451,254,6
-15,Jammu and Kashmir,4507,1671,51
-16,Jharkhand,1489,592,8
-17,Karnataka,6041,2862,69
-18,Kerala,2161,905,18
-19,Ladakh,115,52,1
-20,Madhya Pradesh,10049,6892,427
-21,Maharashtra,94041,44517,3438
-22,Manipur,311,63,0
-23,Meghalaya,44,13,1
-24,Mizoram,93,1,0
-25,Nagaland,128,22,0
-26,Odisha,3250,2282,9
-27,Puducherry,127,53,0
-28,Punjab,2805,2232,55
-29,Rajasthan,11600,8569,259
-30,Sikkim,13,0,0
-31,Tamil Nadu,36841,19333,326
-32,Telengana,4111,1817,156
-33,Tripura,895,239,1
-34,Uttarakhand,1562,831,15
-35,Uttar Pradesh,11610,6871,321
-36,West Bengal,9328,3779,432
-NA,Unclassified,8931,0,0
+1,Andaman and Nicobar Islands,38,33,0
+2,Andhra Pradesh,5429,3048,80
+3,Arunachal Pradesh,61,4,0
+4,Assam,3319,1432,6
+5,Bihar,5983,3266,36
+6,Chandigarh,332,286,5
+7,Chhattisgarh,1398,447,6
+8,Dadra and Nagar Haveli and Daman and Diu,30,2,0
+9,Delhi,34687,12731,1085
+10,Goa,417,67,0
+11,Gujarat,22032,15101,1385
+12,Haryana,5968,2260,64
+13,Himachal Pradesh,470,280,6
+14,Jammu and Kashmir,4574,1820,52
+15,Jharkhand,1599,630,8
+16,Karnataka,6245,2977,72
+17,Kerala,2244,968,18
+18,Ladakh,135,54,1
+19,Madhya Pradesh,10241,7042,431
+20,Maharashtra,97648,46078,3590
+21,Manipur,366,73,0
+22,Meghalaya,44,18,1
+23,Mizoram,102,1,0
+24,Nagaland,128,22,0
+25,Odisha,3386,2354,9
+26,Puducherry,157,67,2
+27,Punjab,2887,2259,59
+28,Rajasthan,11838,8775,265
+29,Sikkim,14,2,0
+30,Tamil Nadu,38716,20705,349
+31,Telangana,4320,1993,165
+32,Tripura,913,278,1
+33,Uttarakhand,1643,842,15
+34,Uttar Pradesh,12088,7292,345
+35,West Bengal,9768,3988,442
+NA,Unclassified,8315,0,0
