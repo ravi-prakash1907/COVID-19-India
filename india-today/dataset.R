@@ -272,10 +272,12 @@ india.bulk.summary.datewise = sort.datewise("india.bulk.summary.statewise")
 
 india.daily.rise = dailyGrowth()
 #View(india.daily.rise)
+print(india.daily.rise)
 
 # india.aggr.summary
 india.summary.overall = india.daily.rise[nrow(india.daily.rise),-c(2:3)]
 #View(india.summary.overall)
+print(india.summary.overall)
 
 
 
