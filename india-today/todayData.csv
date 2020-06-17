@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,38,33,0
-2,Andhra Pradesh,5965,3195,82
-3,Arunachal Pradesh,87,4,0
-4,Assam,3718,1584,8
-5,Bihar,6290,3956,39
-6,Chandigarh,345,286,5
-7,Chhattisgarh,1512,631,6
-8,Dadra and Nagar Haveli and Daman and Diu,35,2,0
-9,Delhi,38958,14945,1271
-10,Goa,523,70,0
-11,Gujarat,23038,15883,1448
-12,Haryana,6749,2803,78
-13,Himachal Pradesh,502,313,6
-14,Jammu and Kashmir,4878,2269,55
-15,Jharkhand,1711,816,8
-16,Karnataka,6824,3648,81
-17,Kerala,2407,1046,19
-18,Ladakh,437,68,1
-19,Madhya Pradesh,10641,7377,447
-20,Maharashtra,104568,49346,3830
-21,Manipur,449,91,0
-22,Meghalaya,44,22,1
-23,Mizoram,107,1,0
-24,Nagaland,163,76,0
-25,Odisha,3723,2594,10
-26,Puducherry,176,82,2
-27,Punjab,3063,2327,65
-28,Rajasthan,12401,9337,282
-29,Sikkim,63,4,0
-30,Tamil Nadu,42687,23409,397
-31,Telangana,4737,2352,182
-32,Tripura,1046,315,1
-33,Uttarakhand,1785,1077,23
-34,Uttar Pradesh,13118,7875,385
-35,West Bengal,10698,4542,463
-NA,Unclassified,7436,0,0
+1,Andaman and Nicobar Islands,44,33,0
+2,Andhra Pradesh,6841,3509,88
+3,Arunachal Pradesh,95,7,0
+4,Assam,4319,2166,8
+5,Bihar,6778,4644,41
+6,Chandigarh,358,302,6
+7,Chhattisgarh,1781,1036,9
+8,Dadra and Nagar Haveli and Daman and Diu,45,9,0
+9,Delhi,44688,16500,1837
+10,Goa,629,85,0
+11,Gujarat,24577,17082,1533
+12,Haryana,8272,3748,118
+13,Himachal Pradesh,560,372,8
+14,Jammu and Kashmir,5298,2781,63
+15,Jharkhand,1839,1121,9
+16,Karnataka,7530,4456,94
+17,Kerala,2622,1236,20
+18,Ladakh,649,85,1
+19,Madhya Pradesh,11083,8152,476
+20,Maharashtra,113445,57851,5537
+21,Manipur,500,159,0
+22,Meghalaya,44,25,1
+23,Mizoram,121,1,0
+24,Nagaland,179,92,0
+25,Odisha,4163,2974,11
+26,Puducherry,216,99,6
+27,Punjab,3371,2461,72
+28,Rajasthan,13216,9849,308
+29,Sikkim,70,4,0
+30,Tamil Nadu,48019,26782,528
+31,Telangana,5406,3027,191
+32,Tripura,1092,433,1
+33,Uttarakhand,1942,1216,25
+34,Uttar Pradesh,14091,8610,417
+35,West Bengal,11909,6028,495
+NA,Unclassified,8273,0,0
