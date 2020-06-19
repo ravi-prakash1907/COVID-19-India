@@ -156,8 +156,8 @@ casesTillNow = rbind(casesTillYesterday, casesToday)
 New = tail(casesTillNow, 33)
 Old = tail(casesTillYesterday, 33)
 
-View(New)
-View(Old)
+#View(New)
+#View(Old)
 
 
 ################################################
