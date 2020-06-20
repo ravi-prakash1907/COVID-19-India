@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,44,33,0
-2,Andhra Pradesh,7518,3789,92
-3,Arunachal Pradesh,103,10,0
-4,Assam,4777,2654,9
-5,Bihar,7025,5056,44
-6,Chandigarh,374,306,6
-7,Chhattisgarh,1946,1228,10
-8,Dadra and Nagar Haveli and Daman and Diu,58,13,0
-9,Delhi,49979,21341,1969
-10,Goa,705,109,0
-11,Gujarat,25601,17819,1591
-12,Haryana,9218,4556,134
-13,Himachal Pradesh,595,382,8
-14,Jammu and Kashmir,5555,3144,71
-15,Jharkhand,1920,1198,11
-16,Karnataka,7944,4983,114
-17,Kerala,2794,1415,21
-18,Ladakh,687,95,1
-19,Madhya Pradesh,11426,8632,486
-20,Maharashtra,120504,60838,5751
-21,Manipur,606,199,0
-22,Meghalaya,44,30,1
+1,Andaman and Nicobar Islands,45,35,0
+2,Andhra Pradesh,7961,3917,96
+3,Arunachal Pradesh,103,11,0
+4,Assam,4904,3039,9
+5,Bihar,7181,5098,50
+6,Chandigarh,381,315,6
+7,Chhattisgarh,2028,1331,10
+8,Dadra and Nagar Haveli and Daman and Diu,62,14,0
+9,Delhi,53116,23569,2035
+10,Goa,725,118,0
+11,Gujarat,26141,18159,1618
+12,Haryana,9743,4889,144
+13,Himachal Pradesh,619,388,8
+14,Jammu and Kashmir,5680,3194,75
+15,Jharkhand,1965,1332,11
+16,Karnataka,8281,5210,124
+17,Kerala,2912,1511,21
+18,Ladakh,744,95,1
+19,Madhya Pradesh,11582,8748,495
+20,Maharashtra,124331,62773,5893
+21,Manipur,681,218,0
+22,Meghalaya,44,33,1
 23,Mizoram,130,1,0
-24,Nagaland,193,103,0
-25,Odisha,4512,3144,11
-26,Puducherry,271,109,7
-27,Punjab,3615,2570,83
-28,Rajasthan,13857,10742,323
+24,Nagaland,198,125,0
+25,Odisha,4677,3297,11
+26,Puducherry,286,118,7
+27,Punjab,3832,2636,92
+28,Rajasthan,14156,10997,333
 29,Sikkim,70,5,0
-30,Tamil Nadu,52334,28641,625
-31,Telangana,6027,3301,195
-32,Tripura,1155,639,1
-33,Uttarakhand,2102,1386,26
-34,Uttar Pradesh,15181,9239,465
-35,West Bengal,12735,7001,518
-NA,Unclassified,8927,0,0
+30,Tamil Nadu,54449,30271,666
+31,Telangana,6526,3353,198
+32,Tripura,1178,657,1
+33,Uttarakhand,2177,1433,26
+34,Uttar Pradesh,15785,9638,488
+35,West Bengal,13090,7303,529
+NA,Unclassified,9265,0,0
