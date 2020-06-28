@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,47,36,0
-2,Andhra Pradesh,8452,4111,101
-3,Arunachal Pradesh,135,14,0
-4,Assam,4904,3039,9
-5,Bihar,7533,5529,52
-6,Chandigarh,404,316,6
-7,Chhattisgarh,2041,1394,11
-8,Dadra and Nagar Haveli and Daman and Diu,68,26,0
-9,Delhi,56746,31294,2112
-10,Goa,754,129,0
-11,Gujarat,26680,18694,1638
-12,Haryana,10223,5128,149
-13,Himachal Pradesh,656,413,8
-14,Jammu and Kashmir,5834,3336,81
-15,Jharkhand,1965,1335,11
-16,Karnataka,8697,5391,132
-17,Kerala,3039,1568,21
-18,Ladakh,836,117,1
-19,Madhya Pradesh,11724,8880,501
-20,Maharashtra,128205,64153,5984
-21,Manipur,777,232,0
-22,Meghalaya,44,33,1
-23,Mizoram,140,9,0
-24,Nagaland,201,138,0
-25,Odisha,4856,3534,12
-26,Puducherry,286,118,7
-27,Punjab,3952,2678,98
-28,Rajasthan,14536,11274,337
-29,Sikkim,70,25,0
-30,Tamil Nadu,56845,31316,704
-31,Telangana,7072,3506,203
-32,Tripura,1186,680,1
-33,Uttarakhand,2301,1450,27
-34,Uttar Pradesh,16594,9995,507
-35,West Bengal,13531,7865,540
-NA,Unclassified,9127,0,0
+1,Andaman and Nicobar Islands,59,43,0
+2,Andhra Pradesh,10884,4988,136
+3,Arunachal Pradesh,160,38,1
+4,Assam,6321,4033,9
+5,Bihar,8473,6441,57
+6,Chandigarh,423,329,6
+7,Chhattisgarh,2452,1755,12
+8,Dadra and Nagar Haveli and Daman and Diu,155,32,0
+9,Delhi,73780,44765,2429
+10,Goa,995,335,2
+11,Gujarat,29520,21498,1753
+12,Haryana,12463,7380,198
+13,Himachal Pradesh,839,477,9
+14,Jammu and Kashmir,6549,3967,90
+15,Jharkhand,2262,1605,12
+16,Karnataka,10560,6670,170
+17,Kerala,3726,1943,22
+18,Ladakh,941,358,1
+19,Madhya Pradesh,12596,9619,542
+20,Maharashtra,147741,77453,6931
+21,Manipur,1056,354,0
+22,Meghalaya,46,42,1
+23,Mizoram,145,30,0
+24,Nagaland,355,160,0
+25,Odisha,5962,4291,17
+26,Puducherry,502,187,9
+27,Punjab,4769,3192,120
+28,Rajasthan,16296,12840,379
+29,Sikkim,85,39,0
+30,Tamil Nadu,70977,39999,911
+31,Telangana,11364,4688,230
+32,Tripura,1290,1019,1
+33,Uttarakhand,2691,1758,36
+34,Uttar Pradesh,20193,13119,611
+35,West Bengal,15648,10190,606
+NA,Unclassified,8123,0,0
