@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,90,46,0
-2,Andhra Pradesh,13891,6232,180
-3,Arunachal Pradesh,187,61,1
-4,Assam,7752,5333,11
-5,Bihar,9640,7390,62
-6,Chandigarh,435,349,6
-7,Chhattisgarh,2761,2173,13
-8,Dadra and Nagar Haveli and Daman and Diu,203,77,0
-9,Delhi,85161,56235,2680
-10,Goa,1198,478,3
-11,Gujarat,31938,23240,1827
-12,Haryana,14210,9502,232
-13,Himachal Pradesh,942,556,9
-14,Jammu and Kashmir,7237,4585,95
-15,Jharkhand,2426,1845,15
-16,Karnataka,14295,7683,226
-17,Kerala,4189,2152,22
-18,Ladakh,964,616,1
-19,Madhya Pradesh,13370,10199,564
-20,Maharashtra,169883,88960,7610
-21,Manipur,1227,494,0
-22,Meghalaya,47,42,1
-23,Mizoram,148,55,0
-24,Nagaland,434,168,0
-25,Odisha,6859,4946,23
-26,Puducherry,619,221,10
-27,Punjab,5418,3764,138
-28,Rajasthan,17660,13618,405
-29,Sikkim,88,50,0
-30,Tamil Nadu,86224,47749,1141
-31,Telangana,15394,5582,253
-32,Tripura,1380,1085,1
-33,Uttarakhand,2831,2111,39
-34,Uttar Pradesh,22828,15506,672
-35,West Bengal,17907,11719,653
-NA,Unclassified,7004,0,0
+1,Andaman and Nicobar Islands,100,50,0
+2,Andhra Pradesh,15252,6988,193
+3,Arunachal Pradesh,195,66,1
+4,Assam,8582,5851,12
+5,Bihar,10249,7946,70
+6,Chandigarh,446,367,6
+7,Chhattisgarh,2940,2303,14
+8,Dadra and Nagar Haveli and Daman and Diu,215,86,0
+9,Delhi,89802,59992,2803
+10,Goa,1387,670,4
+11,Gujarat,33232,24030,1867
+12,Haryana,14941,10499,240
+13,Himachal Pradesh,979,614,10
+14,Jammu and Kashmir,7695,4856,105
+15,Jharkhand,2521,1931,15
+16,Karnataka,16514,8063,253
+17,Kerala,4593,2439,24
+18,Ladakh,990,694,1
+19,Madhya Pradesh,13861,10655,581
+20,Maharashtra,180298,93154,8053
+21,Manipur,1260,579,0
+22,Meghalaya,52,42,1
+23,Mizoram,160,123,0
+24,Nagaland,459,168,0
+25,Odisha,7316,5353,25
+26,Puducherry,714,272,12
+27,Punjab,5668,3867,149
+28,Rajasthan,18312,14574,421
+29,Sikkim,101,53,0
+30,Tamil Nadu,94049,52926,1264
+31,Telangana,17357,8082,267
+32,Tripura,1396,1093,1
+33,Uttarakhand,2947,2317,41
+34,Uttar Pradesh,24056,16629,718
+35,West Bengal,19170,12528,683
+NA,Unclassified,6832,0,0
