@@ -1,37 +1,37 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,100,50,0
-2,Andhra Pradesh,15252,6988,193
-3,Arunachal Pradesh,195,66,1
-4,Assam,8582,5851,12
-5,Bihar,10249,7946,70
-6,Chandigarh,446,367,6
-7,Chhattisgarh,2940,2303,14
-8,Dadra and Nagar Haveli and Daman and Diu,215,86,0
-9,Delhi,89802,59992,2803
-10,Goa,1387,670,4
-11,Gujarat,33232,24030,1867
-12,Haryana,14941,10499,240
-13,Himachal Pradesh,979,614,10
-14,Jammu and Kashmir,7695,4856,105
-15,Jharkhand,2521,1931,15
-16,Karnataka,16514,8063,253
-17,Kerala,4593,2439,24
-18,Ladakh,990,694,1
-19,Madhya Pradesh,13861,10655,581
-20,Maharashtra,180298,93154,8053
-21,Manipur,1260,579,0
-22,Meghalaya,52,42,1
-23,Mizoram,160,123,0
-24,Nagaland,459,168,0
-25,Odisha,7316,5353,25
-26,Puducherry,714,272,12
-27,Punjab,5668,3867,149
-28,Rajasthan,18312,14574,421
-29,Sikkim,101,53,0
-30,Tamil Nadu,94049,52926,1264
-31,Telangana,17357,8082,267
-32,Tripura,1396,1093,1
-33,Uttarakhand,2947,2317,41
-34,Uttar Pradesh,24056,16629,718
-35,West Bengal,19170,12528,683
-NA,Unclassified,6832,0,0
+1,Andaman and Nicobar Islands,125,72,0
+2,Andhra Pradesh,18697,8422,232
+3,Arunachal Pradesh,269,78,1
+4,Assam,11388,7125,14
+5,Bihar,11876,8765,95
+6,Chandigarh,466,395,6
+7,Chhattisgarh,3207,2601,14
+8,Dadra and Nagar Haveli and Daman and Diu,271,106,0
+9,Delhi,99444,71339,3067
+10,Goa,1761,936,7
+11,Gujarat,36037,25892,1943
+12,Haryana,17005,12944,265
+13,Himachal Pradesh,1063,737,11
+14,Jammu and Kashmir,8429,5255,132
+15,Jharkhand,2781,2045,19
+16,Karnataka,23474,9847,372
+17,Kerala,5429,3174,25
+18,Ladakh,1005,826,1
+19,Madhya Pradesh,14930,11411,608
+20,Maharashtra,206619,111740,8822
+21,Manipur,1366,688,0
+22,Meghalaya,62,43,1
+23,Mizoram,186,130,0
+24,Nagaland,590,231,0
+25,Odisha,9070,6224,36
+26,Puducherry,802,331,12
+27,Punjab,6283,4408,164
+28,Rajasthan,20164,15928,456
+29,Sikkim,123,61,0
+30,Tamil Nadu,111151,62778,1510
+31,Telangana,23902,12703,295
+32,Tripura,1568,1202,1
+33,Uttarakhand,3124,2524,42
+34,Uttar Pradesh,27707,18761,785
+35,West Bengal,22126,14711,757
+NA,Unclassified,4913,0,0
