@@ -1,37 +1,36 @@
 S. No.,Name of State / UT,Cured/Discharged/Migrated*,Deaths**,Total Confirmed cases*
-1,Andaman and Nicobar Islands,166,109,0
-2,Andhra Pradesh,33019,17467,408
-3,Arunachal Pradesh,462,153,3
-4,Assam,17807,11416,40
-5,Bihar,19284,12849,174
-6,Chandigarh,600,446,10
-7,Chhattisgarh,4379,3275,20
-8,Dadra and Nagar Haveli and Daman and Diu,520,310,1
-9,Delhi,115346,93236,3446
-10,Goa,2753,1607,18
-11,Gujarat,43637,30503,2069
-12,Haryana,22628,17090,312
-13,Himachal Pradesh,1309,951,11
-14,Jammu and Kashmir,11173,6223,195
-15,Jharkhand,4091,2427,36
-16,Karnataka,44077,17390,842
-17,Kerala,8930,4438,34
-18,Ladakh,1093,946,1
-19,Madhya Pradesh,19005,13575,673
-20,Maharashtra,267665,149007,10695
-21,Manipur,1672,970,0
-22,Meghalaya,318,66,2
-23,Mizoram,238,159,0
-24,Nagaland,896,346,0
-25,Odisha,14280,9864,74
-26,Puducherry,1531,829,18
-27,Punjab,8511,5663,213
-28,Rajasthan,25571,19161,525
-29,Sikkim,209,87,0
-30,Tamil Nadu,147324,97310,2099
-31,Telangana,37745,24840,375
-32,Tripura,2170,1538,2
-33,Uttarakhand,3686,2867,50
-34,Uttar Pradesh,39724,24983,983
-35,West Bengal,32838,19931,980
-NA,Unclassified,1524,0,0
+1,Andaman and Nicobar Islands,207,152,0
+2,Andhra Pradesh,53724,24228,696
+3,Arunachal Pradesh,790,285,3
+4,Assam,25382,17095,58
+5,Bihar,27646,17433,217
+6,Chandigarh,737,518,12
+7,Chhattisgarh,5561,3944,25
+8,Dadra and Nagar Haveli and Daman and Diu,684,448,2
+9,Delhi,123747,104918,3663
+10,Goa,3853,2361,23
+11,Gujarat,49353,35678,2162
+12,Haryana,26858,20226,355
+13,Himachal Pradesh,1631,1067,11
+14,Jammu and Kashmir,14650,8274,254
+15,Jharkhand,5756,2810,53
+16,Karnataka,67420,23795,1403
+17,Kerala,13274,5616,43
+18,Ladakh,1195,1007,2
+19,Madhya Pradesh,23310,15684,738
+20,Maharashtra,318695,175029,12030
+21,Manipur,1925,1307,0
+22,Meghalaya,466,66,4
+23,Mizoram,297,168,0
+24,Nagaland,1021,484,0
+25,Odisha,18110,12910,97
+26,Puducherry,2092,1265,29
+27,Punjab,10510,7118,262
+28,Rajasthan,30390,22195,568
+29,Sikkim,305,92,0
+30,Tamil Nadu,175678,121776,2551
+31,Telangana,46274,34323,422
+32,Tripura,3079,1845,7
+33,Uttarakhand,4642,3212,55
+34,Uttar Pradesh,51160,30831,1192
+35,West Bengal,44769,26418,1147
